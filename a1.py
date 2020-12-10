@@ -23,20 +23,10 @@ print("-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-
 
 
 
-wake()  # 启动手机
+wake()  # 启动手机(手机依然黑屏， 后台价值)
 start_app("com.ss.android.ugc.aweme.lite")
 
-hua = 0
-滑动方向 = 0 
-while 1:
-    hua += 1
-    滑动方向 += 1
-    
-    if hua == 10:
-        touch(Template(r"tpl1607564875731.png", record_pos=(-0.404, -0.67), resolution=(1079, 2340)))
 
-    sleep(5)
-    swipe((484, 1711),(531,709))
 
     
 
@@ -53,4 +43,5 @@ print("-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-
 # generate html report
 # from airtest.report.report import simple_report
 # simple_report(__file__, logpath=True)
+
 
