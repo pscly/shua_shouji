@@ -1,0 +1,2 @@
+{"tag": "function", "depth": 2, "time": 1607664817.9214306, "data": {"name": "try_log_screen", "call_args": {"screen": null, "quality": null, "max_size": null}, "start_time": 1607664815.4241257, "ret": {"screen": "1607664817884.jpg", "resolution": [1080, 2340]}, "end_time": 1607664817.9214306}}
+{"tag": "function", "depth": 1, "time": 1607664819.080694, "data": {"name": "touch", "call_args": {"v": [333, 333], "kwargs": {}, "times": 1}, "start_time": 1607664815.4241257, "ret": [333, 333], "end_time": 1607664819.080694}}
