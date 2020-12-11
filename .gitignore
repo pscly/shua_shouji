@@ -3,5 +3,6 @@
 .vscode/
 .idea/
 /log/
+/venv/
 *.md linguist-language=c
 

@@ -10,15 +10,21 @@ def get_ranint(ji=0):
     # (531, 709))           # 330 是上面
 
 class Dy:
-    def __init__(self):
 
+    def __init__(self):
+        # wake()  # 启动手机(手机依然黑屏， 后台价值)
+        self.run_douyin = 0
         pass
 
     def qidongdouyin(self):
         wake()  # 启动手机(手机依然黑屏， 后台价值)
         start_app("com.ss.android.ugc.aweme.lite")
+        self.run_douyin = 1
 
     def shua(self, sleep_num=5):
+        if not self.run_douyin:
+            self.qidongdouyin()
+
         hua = 0
         滑动方向 = 0
 
@@ -26,7 +32,7 @@ class Dy:
             hua += 1
             滑动方向 += 1
 
-            if hua == 10:
+            if hua == 6:
                 touch(Template(r"tpl1607564875731.png", record_pos=(-0.404, -0.67), resolution=(1079, 2340)))
 
             sleep(sleep_num)
@@ -36,4 +42,5 @@ class Dy:
 if __name__ == '__main__':
     print(get_ranint())
     print(get_ranint(1))
+
 
